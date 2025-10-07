@@ -1,44 +1,49 @@
-# fe-laundry-app
+# Laundry App - React + Vite
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplikasi manajemen laundry yang dibangun dengan **React.js + Vite**, **Tailwind CSS v4**, dan **DaisyUI**.
 
-## Recommended IDE Setup
+## 🚀 Teknologi
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **React 18** - Library UI
+- **Vite 7** - Build tool & dev server
+- **React Router DOM** - Client-side routing
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **DaisyUI** - Component library untuk Tailwind
 
-## Recommended Browser Setup
+## 📦 Struktur Folder
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+```
+fe-laundry-app/
+├── src/
+│   ├── components/
+│   │   └── layout/
+│   │       └── DashboardLayout.jsx  # Layout dengan sidebar & navbar
+│   ├── pages/
+│   │   ├── LoginPage.jsx            # Halaman login
+│   │   └── DashboardPage.jsx        # Halaman dashboard
+│   ├── utils/
+│   │   └── auth.js                  # Utility autentikasi
+│   ├── App.jsx                      # Main app dengan routing
+│   ├── main.jsx                     # Entry point
+│   └── index.css                    # Global styles
+├── public/                          # Static assets
+├── dist/                            # Production build
+├── vite.config.js                   # Vite configuration
+└── package.json
+```
 
-## Customize configuration
+## 🔧 Instalasi
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Jalankan development server
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
+# Build production
 npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+# Preview production build
+npm run preview
 ```
